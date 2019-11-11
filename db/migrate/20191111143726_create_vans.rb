@@ -9,7 +9,7 @@ class CreateVans < ActiveRecord::Migration[6.0]
       t.integer :year
       t.integer :kilometers
       t.boolean :hyppyness
-      t.references :user, null: false, foreign_key: true
+      t.references :owner, foreign_key: {to_table: :users}
 
       t.timestamps
     end
