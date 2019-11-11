@@ -11,5 +11,6 @@ class VansController < ApplicationController
   end
 
   def search
+    @vans = Van.new
   end
 end
