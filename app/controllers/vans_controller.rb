@@ -8,6 +8,7 @@ class VansController < ApplicationController
   end
 
   def show
+    @van = Van.all
   end
 
   def search
