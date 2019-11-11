@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 2019_11_11_143908) do
   create_table "rentals", force: :cascade do |t|
     t.date "rental_date"
     t.bigint "van_id", null: false
-    t.bigint "user_id", null: false
+    t.bigint "customer_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_rentals_on_user_id"
+    t.index ["customer_id"], name: "index_rentals_on_customer_id"
     t.index ["van_id"], name: "index_rentals_on_van_id"
   end
 
@@ -46,13 +46,13 @@ ActiveRecord::Schema.define(version: 2019_11_11_143908) do
     t.integer "year"
     t.integer "kilometers"
     t.boolean "hyppyness"
-    t.bigint "user_id", null: false
+    t.bigint "owner_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_vans_on_user_id"
+    t.index ["owner_id"], name: "index_vans_on_owner_id"
   end
 
-  add_foreign_key "rentals", "users"
+  add_foreign_key "rentals", "users", column: "customer_id"
   add_foreign_key "rentals", "vans"
-  add_foreign_key "vans", "users"
+  add_foreign_key "vans", "users", column: "owner_id"
 end
