@@ -1,7 +1,13 @@
-<h1>Vans#show</h1>
+<h2>Vans#show</h2>
   <div class="container">
-    <p><%= @van.prices %></p>
-    <p><%= @van.availibility %></p>
-    <p><%= @van.town %></p>
-    <p><%= @van.picture %></p>
+    <div class="descprition">
+      <p><%= @van.town %></p>
+
+      <p><%= @van.availibility %></p>
+
+      <p><%= @van.prices %></p>
+    </div>
+    <div class="picture">
+      <p><%= @van.picture %></p>
+    </div>
   </div>
