@@ -17,37 +17,37 @@ puts "rentals destroyed"
 
 hugo = User.create!(
   email: "hugo@beteur.fr",
-  password: "pouetpouet",
+  password: "azerty",
   first_name: "Hugo",
   last_name: "Valla")
 
 alex = User.create!(
   email: "alex@beteur.fr",
-  password: "alexxxxx",
+  password: "azerty",
   first_name: "Alex",
   last_name: "Viretti")
 
 marin = User.create!(
   email: "marin@beteur.fr",
-  password: "dodouc",
+  password: "azerty",
   first_name: "Marin",
   last_name: "Vanthier")
 
 marine = User.create!(
   email: "marine@beteur.fr",
-  password: "saucisse",
+  password: "azerty",
   first_name: "Marine",
   last_name: "Diot")
 
 jojo = User.create!(
   email: "toto@gmail.com",
-  password: "totooooooo",
+  password: "azerty",
   first_name:"Jojo",
   last_name: "Blanchard")
 
 kev = User.create!(
   email: "stetienne@yahoo.fr",
-  password: "elprofessor",
+  password: "azerty",
   first_name:"Kev",
   last_name:"Cha")
 
