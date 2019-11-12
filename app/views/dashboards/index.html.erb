@@ -1,0 +1,5 @@
+<h1>Index</h1>
+<% @vans.each do |van| %>
+<p><%= van.town  %></p>
+<p><%= van.owner.email  %></p>
+<% end %>
