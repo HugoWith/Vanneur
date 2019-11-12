@@ -1,5 +1,5 @@
 class VansController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:search]
+  skip_before_action :authenticate_user!, only: [:search, :show]
 
   def new
     @van = Van.new
@@ -8,7 +8,7 @@ class VansController < ApplicationController
   def create
     @van = Van.new(vans_params)
     @van.owner = current_user
-  
+
       if @van.save!
         redirect_to dashboards_path(@van)
       else
@@ -27,7 +27,7 @@ class VansController < ApplicationController
   private
 
 def vans_params
-    params.require(:van).permit(:town, :pictures, :description, :prices, :availability , :year, :kilometers, :hyppyness)
+  params.require(:van).permit(:town, :pictures, :description, :prices, :availability, :year, :kilometers, :hyppyness)
 end
 
 end
