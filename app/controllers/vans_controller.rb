@@ -27,7 +27,7 @@ class VansController < ApplicationController
   end
 
   def update
-    @van.update(pet_params)
+    @van.update(vans_params)
     redirect_to vans_path
   end
 
@@ -40,7 +40,7 @@ class VansController < ApplicationController
 
   private
 
-  def set_vans
+  def set_van
     @van = Van.find(params[:id])
   end
 
