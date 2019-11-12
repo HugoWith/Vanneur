@@ -5,7 +5,7 @@ const initTypedJS = () => {
 
   if (span) {
     new Typed('#banner-typed-text', {
-      strings: ['Les meilleurs van(nes)^1000', "sans se VANter !"],
+      strings: ['Les meilleurs van(nes)^1000', "Sans se VANter !"],
       typeSpeed: 50,
       loop: true
     });
