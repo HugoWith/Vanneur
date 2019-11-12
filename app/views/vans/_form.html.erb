@@ -1,6 +1,7 @@
 <%= simple_form_for @van do |f| %>
 <%= f.input :town %>
 <%= f.input :pictures %>
+<%= f.input :pictures_cache, as: :hidden %>
 <%= f.input :prices %>
 <%= f.input :availability %>
 <%= f.input :year %>
