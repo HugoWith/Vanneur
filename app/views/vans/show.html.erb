@@ -1,13 +1,36 @@
-<h2>Vans#show</h2>
-  <div class="container">
-    <div class="descprition">
-      <p><%= @van.town %></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Vanneur</title>
+  </head>
 
-      <p><%= @van.availibility %></p>
+  <body>
+    <header>
+     <h2>Vans#show</h2>
+    </header>
 
-      <p><%= @van.prices %></p>
+  <section>
+    <div class="container">
+      <div class="descprition">
+        <p><%= @van.town %></p>
+
+        <p><%= @van.availability %></p>
+
+        <p><%= @van.prices %></p>
+      </div>
+      <div class="picture">
+        <p><%= @van.picture %></p>
+      </div>
     </div>
-    <div class="picture">
-      <p><%= @van.picture %></p>
+  </section>
+    <div class="link">
+      <p><a href=“#“>Email proprio</a></p>
     </div>
-  </div>
+
+  <footer>
+
+  </footer>
+
+  </body>
+</html>
