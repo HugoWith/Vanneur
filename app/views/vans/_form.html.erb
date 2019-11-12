@@ -6,6 +6,6 @@
 <%= f.input :year %>
 <%= f.input :kilometers %>
 <%= f.input :hyppyness %>
-<%= f.button :submit %>
-<button type="button" class="btn btn-primary"><%= link_to "Back to Dashboard", dashboards_path%> </button>
+<%= f.button :submit, id: "button-show" %>
+<button type="button" id="button-show2"class="btn btn-primary"><%= link_to "Back to Dashboard", dashboards_path%> </button>
 <% end %>
