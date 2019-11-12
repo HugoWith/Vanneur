@@ -1,15 +1,17 @@
 
 
-  <div class="container">
-    <div class="bg-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1308&q=80')">
+
+    <div class="bg-img" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1308&q=80')">
+      <div class="container">
       <h1>VANNEUR</h1>
       <div class="form">
         <h2>Vannez voyager avec nous !</h2>
 
         <%= simple_form_for @vans do |f| %>
-        <%= f.input :town %>
-        <%= f.input :availability%>
-        <%= f.input :hyppyness %>
+        <%= f.input :town, label: 'Case départ' %>
+        <%= f.input :availability, label: 'On part quand ?'%>
+         <%= f.input :availability, label: 'On revient quand ?'%>
+        <%= f.input :hyppyness, label: 'Peace ou pas peace ? 🚌' %>
         <%= link_to 'Go ! ✌️', vans_path%>
         <% end %>
       </div>
