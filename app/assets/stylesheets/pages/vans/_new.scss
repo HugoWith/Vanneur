@@ -17,7 +17,20 @@
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1570630819727-b32fda434a7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
     // margin: 0 auto;
 
-
+    .form-group {
+        width: 88%;
+        margin-right: 74px;
+    }
+    
+    // #button-show {
+    //     margin-left: 300px;
+    // }
+    
+    a {
+        text-decoration: none;
+        color: $main-color;
+    }
+    
     a:hover {
       text-decoration: none;
       color: white;
@@ -49,11 +62,6 @@
 //     margin: 0 auto;
 // }
 
-
-.form-group {
-  width: 50%;
-}
-
 #button-show {
   margin-left: 300px;
 }
@@ -61,17 +69,6 @@
   margin-left: 8px;
   color: white;
   text-decoration: none;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  text-decoration: none;
-  color: white;
-
 }
 
 .string {
