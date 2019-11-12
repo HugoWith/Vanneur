@@ -1,0 +1,49 @@
+
+.banner-index {
+
+  h2 {
+    color: #fcf9ea;
+    margin: auto;
+  }
+
+}
+
+.container-index {
+  width: 1080px;
+  margin: auto;
+}
+
+.description-index {
+  opacity: 0;
+  transition: 0.8 ease-in-out;
+}
+
+
+
+.prices-index {
+  font-size: 30px;
+  opacity: 1;
+  transition: 0.8s ease-in-out;
+  margin: 90px;
+}
+
+.card-category-index:hover{
+  opacity: 0.8;
+  color: #ffc5a1;
+  transition: 1s ease-in-out;
+
+  .description-index {
+    opacity: 1;
+    transition: 0.8s ease-in-out;
+  }
+
+  .prices-index {
+    font-size: 30px;
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+    margin: 0px;
+  }
+}
+
+
+

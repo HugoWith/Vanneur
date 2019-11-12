@@ -1,4 +1,7 @@
 
+// CARD HOMEPAGE
+//___________________________________________________
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -18,7 +21,7 @@
  font-size: 28px;
 }
 
- .card-category:hover{
+.card-category:hover{
   opacity: 0.8;
   font-size: 27px;
   color: #ffc5a1;
@@ -56,6 +59,69 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+// CARDS DE INDEX
+//___________________________________________________
+
+.cards-index{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-gap: 32px;
+
+}
+
+
+.card-category-index{
+ background-size: cover;
+ opacity: 1;
+ box-shadow: 2px 2px 2px #DCDCDC;
+ border-radius: 3px;
+ height: 200px;
+ text-align: center;
+ vertical-align: center;
+ color: #fcf9ea;
+ font-weight: bold;
+ font-size: 18px;
+}
+
+
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards-index {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards-index {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards-index {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards-index {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards-index {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
