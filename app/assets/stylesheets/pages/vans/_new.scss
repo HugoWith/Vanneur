@@ -37,58 +37,62 @@
 
     }
 
-// .string {
-//     font-family: $headers-font;
-//     color: white;
-// }
+    #button-show {
+      margin-left: 300px;
+    }
+    #button-show2 {
+      margin-left: 8px;
+      color: white;
+      text-decoration: none;
+    }
 
-// .integer {
-//     font-family: $headers-font;
-//     color: white;
-// }
+    .string {
+      font-family: $headers-font;
+      color: white;
+    }
 
-// .date {
-//     font-family: $headers-font;
-//     color: white;
-// }
+    .integer {
+      font-family: $headers-font;
+      color: white;
+    }
 
-// .form-check-label {
-//     font-family: $headers-font;
-//     color: white;
-// }
+    .date {
+      font-family: $headers-font;
+      color: white;
+    }
 
+    .form-check-label {
+      font-family: $headers-font;
+      color: white;
+    }
+    #van_town {
+      color: black;
+    }
+    #van_prices {
+      color: black;
+    }
+    #van_year {
+      color: black;
+    }
+    #van_kilometers {
+      color: black;
+    }
 
-// #new_van {
-//     margin: 0 auto;
-// }
+    #van_availability_1i {
+      color: black;
+    }
 
-#button-show {
-  margin-left: 300px;
-}
-#button-show2 {
-  margin-left: 8px;
-  color: white;
-  text-decoration: none;
-}
+    #van_availability_2i {
+      color: black;
+    }
 
-.string {
-  font-family: $headers-font;
-  color: white;
-}
+    #van_availability_3i {
+      color: black;
+    }
 
-.integer {
-  font-family: $headers-font;
-  color: white;
-}
+    .form-control mx-1 date required {
+      color: black;
+    }
 
-.date {
-  font-family: $headers-font;
-  color: white;
-}
-
-.form-check-label {
-  font-family: $headers-font;
-  color: white;
-}
 }
 
