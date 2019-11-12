@@ -51,3 +51,13 @@ kev = User.create!(
   first_name:"Kev",
   last_name:"Cha")
 
+van1 = Van.create!(
+  town: "Lyon",
+  description: "van 2 places à l'avant, très bien équipé. Parfait pour quelques semaines de trip !",
+  prices:"50",
+  availability: Date.new(2019,12,26),
+  hyppyness: true,
+  year: 1996,
+  kilometers: 60.000,
+  owner: hugo)
+
