@@ -59,5 +59,44 @@ van1 = Van.create!(
   hyppyness: true,
   year: 1996,
   kilometers: 60.000,
+  owner: kev)
+
+van2 = Van.create!(
+  town: "Lyon",
+  description: "Van tout équipé, prêt à prendre la route",
+  prices:"50",
+  availability: Date.new(2019,12,26),
+  hyppyness: false,
+  year: 1999,
+  kilometers: 50.000,
+  owner: kev)
+
+van3 = Van.create!(
+  town: "Lyon",
+  description: "Merveilleux van. Rangements et rideaux disponibles. A déjà servi pour faire un sacré tour d'Australie",
+  prices:"80",
+  availability: Date.new(2019,12,26),
+  hyppyness: true,
+  year: 2006,
+  kilometers: 70.000,
   owner: hugo)
 
+van4 = Van.create!(
+  town: "Lyon",
+  description: "A fait de la route mais la tient encore. Mignon comme tout. Vaisselle et rangements dispos.",
+  prices:"75",
+  availability: Date.new(2019,12,30),
+  hyppyness: true,
+  year: 2010,
+  kilometers: 75.000,
+  owner: marine)
+
+van5 = Van.create!(
+  town: "Lyon",
+  description: "Van pour 2. Lit hyper confortable. Rangements prévus. Prêt à rouler",
+  prices:"75",
+  availability: Date.new(2019,12,30),
+  hyppyness: true,
+  year: 2015,
+  kilometers: 30.000,
+  owner: kev)
