@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  resources :dashboards, only: [:index, :new, :create]
+  resources :dashboards, only: [:index]
   # get 'rentals/new', to: "rentals#new"
   get 'vans/search', to: "vans#search"
 
-  resources :vans, only: [:show, :new, :create, :index] do
+  resources :vans do
     resources :rentals, only: [:new, :create]
   end
+
+  resources :rentals, only: [:destroy]
   # get 'rentals/create', to: "rentals#create"
   # get 'vans/new' to: "vans#new"
   # get 'vans/create', to: "vans#create"
