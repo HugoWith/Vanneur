@@ -1,0 +1,11 @@
+<%= simple_form_for @van do |f| %>
+<%= f.input :town %>
+<%= f.input :pictures %>
+<%= f.input :prices %>
+<%= f.input :availability %>
+<%= f.input :year %>
+<%= f.input :kilometers %>
+<%= f.input :hyppyness %>
+<%= f.button :submit %>
+<button type="button" class="btn btn-primary"><%= link_to "Back to Dashboard", dashboards_path%> </button>
+<% end %>
