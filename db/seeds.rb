@@ -6,53 +6,48 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
-puts
+puts "users destroyed"
 
 Van.destroy_all
+puts "vans destroyed"
+
+Rental.destroy_all
+puts "rentals destroyed"
 
 
 hugo = User.create!(
-  email: hugo@beteur.fr,
-  password:,
-  first_name:,
-  last_name: )
+  email: "hugo@beteur.fr",
+  password: "pouetpouet",
+  first_name: "Hugo",
+  last_name: "Valla")
 
 alex = User.create!(
-  email: alex@beteur.fr,
-  password:,
-  first_name:,
-  last_name: )
+  email: "alex@beteur.fr",
+  password: "alexxxxx",
+  first_name: "Alex",
+  last_name: "Viretti")
 
 marin = User.create!(
-  email:,
-  password:,
-  first_name:,
-  last_name: )
+  email: "marin@beteur.fr",
+  password: "dodouc",
+  first_name: "Marin",
+  last_name: "Vanthier")
 
 marine = User.create!(
-  email:,
-  password:,
-  first_name:,
-  last_name: )
+  email: "marine@beteur.fr",
+  password: "saucisse",
+  first_name: "Marine",
+  last_name: "Diot")
 
 jojo = User.create!(
-  email:,
-  password:,
-  first_name:,
-  last_name: )
+  email: "toto@gmail.com",
+  password: "totooooooo",
+  first_name:"Jojo",
+  last_name: "Blanchard")
 
 kev = User.create!(
-  email:,
-  password:,
-  first_name:,
-  last_name: )
+  email: "stetienne@yahoo.fr",
+  password: "elprofessor",
+  first_name:"Kev",
+  last_name:"Cha")
 
-van = Van.create(
-  town:,
-  description:,
-  prices:,
-  availability:,
-  hyppyness:,
-  year:,
-  kilometers:,
-  owner: )
