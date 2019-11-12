@@ -14,13 +14,15 @@
     // margin: 0 auto;
 
     .form-group {
-        width: 50%;
+        width: 88%;
+        margin-right: 74px;
     }
     
-    #button-show {
-        margin-left: 300px;
-    }
-    #button-show2 {
+    // #button-show {
+    //     margin-left: 300px;
+    // }
+    
+    .button1 {
         margin-left: 8px;
         color: white;
         text-decoration: none;
@@ -28,7 +30,7 @@
     
     a {
         text-decoration: none;
-        color: white;
+        color: $main-color;
     }
     
     a:hover {
