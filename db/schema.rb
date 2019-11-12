@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_11_143908) do
+ActiveRecord::Schema.define(version: 2019_11_12_143357) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 2019_11_11_143908) do
   create_table "rentals", force: :cascade do |t|
     t.date "rental_date"
     t.bigint "van_id", null: false
-    t.bigint "user_id", null: false
+    t.bigint "customer_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_rentals_on_user_id"
+    t.index ["customer_id"], name: "index_rentals_on_customer_id"
     t.index ["van_id"], name: "index_rentals_on_van_id"
   end
 
@@ -33,6 +33,8 @@ ActiveRecord::Schema.define(version: 2019_11_11_143908) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "first_name"
+    t.string "last_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -45,14 +47,14 @@ ActiveRecord::Schema.define(version: 2019_11_11_143908) do
     t.date "availability"
     t.integer "year"
     t.integer "kilometers"
-    t.boolean "hyppyness"
-    t.bigint "user_id", null: false
+    t.boolean "hyppyness", default: false
+    t.bigint "owner_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_vans_on_user_id"
+    t.index ["owner_id"], name: "index_vans_on_owner_id"
   end
 
-  add_foreign_key "rentals", "users"
+  add_foreign_key "rentals", "users", column: "customer_id"
   add_foreign_key "rentals", "vans"
-  add_foreign_key "vans", "users"
+  add_foreign_key "vans", "users", column: "owner_id"
 end
