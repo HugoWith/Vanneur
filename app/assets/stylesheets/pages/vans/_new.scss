@@ -1,59 +1,97 @@
 .new {
-    font-size: 60px;
-    text-align: center;
-    background-color: $main-color;
-    margin-top: 15px;
-    width: 604px;
-    margin-left: 207px;
-    border-radius: 9px;
-    box-shadow: 10px 5px 5px lightgray;
+  font-size: 60px;
+  text-align: center;
+  background-color: $main-color;
+  margin-top: 15px;
+  width: 604px;
+  margin-left: 207px;
+  border-radius: 9px;
+  box-shadow: 10px 5px 5px lightgray;
 }
 
-.van_new { 
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1570630819727-b32fda434a7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+
+
+
+.van_new {
+
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1570630819727-b32fda434a7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
     // margin: 0 auto;
 
-    .form-group {
-        width: 50%;
-    }
-    
-    #button-show {
-        margin-left: 300px;
-    }
-    #button-show2 {
-        margin-left: 8px;
-        color: white;
-        text-decoration: none;
-    }
-    
-    a {
-        text-decoration: none;
-        color: white;
-    }
-    
+
     a:hover {
-        text-decoration: none;
-        color: white;
-        
+      text-decoration: none;
+      color: white;
+
     }
-    
-    .string {
-        font-family: $headers-font;
-        color: white;
-    }
-    
-    .integer {
-        font-family: $headers-font;
-        color: white;
-    }
-    
-    .date {
-        font-family: $headers-font;
-        color: white;
-    }
-    
-    .form-check-label {
-        font-family: $headers-font;
-        color: white; 
-    }
+
+// .string {
+//     font-family: $headers-font;
+//     color: white;
+// }
+
+// .integer {
+//     font-family: $headers-font;
+//     color: white;
+// }
+
+// .date {
+//     font-family: $headers-font;
+//     color: white;
+// }
+
+// .form-check-label {
+//     font-family: $headers-font;
+//     color: white;
+// }
+
+
+// #new_van {
+//     margin: 0 auto;
+// }
+
+
+.form-group {
+  width: 50%;
 }
+
+#button-show {
+  margin-left: 300px;
+}
+#button-show2 {
+  margin-left: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+
+}
+
+.string {
+  font-family: $headers-font;
+  color: white;
+}
+
+.integer {
+  font-family: $headers-font;
+  color: white;
+}
+
+.date {
+  font-family: $headers-font;
+  color: white;
+}
+
+.form-check-label {
+  font-family: $headers-font;
+  color: white;
+}
+}
+
