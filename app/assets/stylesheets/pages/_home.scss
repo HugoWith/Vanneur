@@ -2,14 +2,33 @@
 
 .container-home {
   width: 1180px;
+  margin: auto;
+  padding: 30px;
+
 }
 
-  .form-home {
-    background-color: #fcf9ea;
-    display: block;
-    position: absolute;
-    right: 100px;
-    width: 35%;
-    padding: 10px;
-    border-radius: 5px;
+.form-home {
+  background-color: #fcf9ea;
+  width: 35%;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+h1 {
+  font-family: $h1-font;
+  font-size: 150px;
+  color: #fcf9ea;
+}
+
+h2 {
+  font-family: $h2-font;
+}
+
+#vannez {
+  color: #badfdb;
+}
+
+.explorer h2{
+  font-weight: bolder;
+  padding: 15px;
 }
