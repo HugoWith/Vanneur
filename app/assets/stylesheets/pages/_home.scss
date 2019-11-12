@@ -1,12 +1,15 @@
 // Specific CSS for your home-page
 
-.container {
+.container-home {
   width: 1180px;
 }
 
-
-.form {
-  display: block;
-  position: relative;
-  left: 30px;
+  .form-home {
+    background-color: #fcf9ea;
+    display: block;
+    position: absolute;
+    right: 100px;
+    width: 35%;
+    padding: 10px;
+    border-radius: 5px;
 }
