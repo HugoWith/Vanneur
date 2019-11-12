@@ -1,12 +1,13 @@
 class VansController < ApplicationController
   skip_before_action :authenticate_user!, only: [:search, :show, :index]
+  before_action :set_van, only: [:show, :edit, :update]
 
   def index
     @vans = Van.all
   end
 
   def show
-    @van = Van.find(params[:id])
+
   end
 
   def new
@@ -24,10 +25,11 @@ class VansController < ApplicationController
   end
 
   def edit
-    @van = Van.find(params[:id])
   end
 
   def update
+    @van.update(pet_params)
+    redirect_to vans_path
   end
 
   def destroy
@@ -38,6 +40,10 @@ class VansController < ApplicationController
   end
 
   private
+
+  def set_vans
+    @van = Van.find(params[:id])
+  end
 
   def vans_params
     params.require(:van).permit(:town, :pictures, :description, :prices, :availability, :year, :kilometers, :hyppyness, :picture_cache)
