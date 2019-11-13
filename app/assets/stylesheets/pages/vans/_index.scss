@@ -8,9 +8,14 @@
 
 }
 
+.container-global {
+  margin-bottom:30px;
+}
+
 .container-index {
   width: 1080px;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 .description-index {
@@ -44,6 +49,12 @@
     margin: 0px;
   }
 }
+
+.button-index {
+  position: relative;
+  padding: 10px;
+}
+
 
 
 

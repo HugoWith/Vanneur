@@ -11,17 +11,25 @@
 
 <div class="container-index">
   <div class="cards-index">
+
     <% @vans.each do |vans| %>
+
     <div class="card-category-index" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path vans.image, height: 300, width: 400, crop: :fill %>')">
+      <%= link_to van_path(vans) do %>
      <div class="text-center">
-      <h2 class="prices-index"> <%= vans.prices %> € </h2>
+      <h2 class="prices-index"> <%= vans.prices %> € /Jour </h2>
       <p class="description-index" > <%= vans.description %></p>
+      <% end %>
     </div>
+
   </div>
   <% end %>
+
+
 </div>
-
-<%= link_to 'Add Your Van 🚌', new_van_path %>
-
+<div>
+<%= link_to 'Add Your Van 🚌', new_van_path, class: 'create-button button-index' %>
+<%= link_to 'Nouvelle recherche 🔎',  vans_search_path, class: 'create-button button-index' %>
+</div>
 </div>
 
