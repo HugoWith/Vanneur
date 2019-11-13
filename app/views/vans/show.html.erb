@@ -1,10 +1,11 @@
 
 <body>
-  <header>
-    <h2 id="H">Book your Van!</h2>
-  </header>
 
-  <div class="bg-img banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1561361513-2d000a50f0dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')">
+    <%# <h2 id="H">Book your Van!</h2> %>
+
+
+  <div class="bg-img banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('<%= cl_image_path @van.image, height: 300, width: 400, crop: :fill %>')">
+      <h2 id="H">Book your Van!</h2>
   </div>
   <section class="container">
     <div id="userVan">
@@ -18,7 +19,7 @@
       <p><strong><em>Availability;</em></strong> <%= @van.availability %></p>
     </div>
     <div id="description-c">
-      <p><strong><em>Prices;</em></strong> <%= @van.prices %>$</p>
+      <p><strong><em>Prices:</em></strong> <%= @van.prices %>€/J</p>
     </div>
   </section>
   <div>
