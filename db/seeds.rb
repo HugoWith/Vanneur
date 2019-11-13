@@ -84,7 +84,7 @@ van3 = Van.create!(
   owner: hugo)
 
 van4 = Van.create!(
-  town: "Vannes",
+  town: "Lyon",
   description: "A fait de la route mais la tient encore. Mignon comme tout. Vaisselle et rangements dispos.",
   prices:"75",
   availability: Date.new(2019,12,30),
@@ -94,7 +94,7 @@ van4 = Van.create!(
   owner: marine)
 
 van5 = Van.create!(
-  town: "Vannes",
+  town: "Paris",
   description: "Van pour 2. Lit hyper confortable. Rangements prévus. Prêt à rouler",
   prices:"75",
   availability: Date.new(2019,12,30),
