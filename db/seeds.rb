@@ -105,7 +105,7 @@ van5 = Van.create!(
 
 van6 = Van.create!(
   town: "Vannes",
-  description: "Idéal de 2 à 4 personnes, ce california de 2018 est en parfait état. (avril 2018, - 33 000 km). C'est un VAN, et donc il passe quasiment partout comme une voiture. Il s'agit du modèle haut de gamme: Océan 204 CV Diesel, et 4 roues motrices. Il a quasiment toutes les options possibles.",
+  description: "Idéal de 2 à 4 personnes, ce california de 2018 est en parfait état. Modèle haut de gamme: Océan 204 CV Diesel, et 4 roues motrices.",
   prices:"82",
   availability: Date.new(2019,12,27),
   year: 2018,
