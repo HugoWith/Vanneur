@@ -1,18 +1,18 @@
 <%= simple_form_for @van do |f| %>
 
 
-<%= f.input :description %>
-<%= f.input :town %>
+<%= f.input :description, placeholder: 'Détails ici' %>
+<%= f.input :town, placeholder: 'Chambery' %>
  <%= f.input :availability %>
 <div class="form-row">
     <div class="col">
-   <%= f.input :prices %>
+   <%= f.input :prices, placeholder: '150€' %>
     </div>
     <div class="col">
-<%= f.input :year %>
+<%= f.input :year, placeholder: '1986' %>
     </div>
      <div class="col">
-<%= f.input :kilometers %>
+<%= f.input :kilometers, placeholder: '170 000' %>
     </div>
 </div>
 <%= f.input :hyppyness %>
