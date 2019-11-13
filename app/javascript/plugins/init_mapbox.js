@@ -28,8 +28,8 @@ const addMarkersToMap = (map, markers) => {
       element.className = 'marker';
       element.style.backgroundImage = `url('${marker.image_url}')`;
       element.style.backgroundSize = 'contain';
-      element.style.width = '33px';
-      element.style.height = '23px';
+      element.style.width = '44px';
+      element.style.height = '36px';
 
     new mapboxgl.Marker(element)
       .setLngLat([ marker.lng, marker.lat ])
