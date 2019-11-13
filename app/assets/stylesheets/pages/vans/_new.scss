@@ -1,12 +1,12 @@
 .new {
   font-size: 60px;
   text-align: center;
-  background-color: $main-color;
-  margin-top: 15px;
+  // background-color: $main-color;
+  margin-top: 292px;
   width: 604px;
-  margin-left: 207px;
+  // margin-left: 207px;
   border-radius: 9px;
-  box-shadow: 10px 5px 5px lightgray;
+  // box-shadow: 10px 5px 5px lightgray;
 }
 
 
@@ -20,6 +20,10 @@
     .form-group {
         width: 88%;
         margin-right: 74px;
+    }
+
+    .form-group date required van_availability {
+      
     }
     
     // #button-show {
@@ -48,42 +52,47 @@
 
     .string {
       font-family: $headers-font;
-      color: white;
+      color: black;
     }
 
     .integer {
       font-family: $headers-font;
-      color: white;
+      color: black;
     }
 
     .date {
       font-family: $headers-font;
-      color: white;
+      color: black;
     }
 
     .form-check-label {
       font-family: $headers-font;
-      color: white;
+      color: black;
     }
     #van_town {
       color: black;
     }
     #van_prices {
       color: black;
+      width: 96px;
     }
     #van_year {
       color: black;
+      width: 96px;
     }
     #van_kilometers {
       color: black;
+      width: 96px;
     }
 
     #van_availability_1i {
       color: black;
+      width: 65px;
     }
 
     #van_availability_2i {
       color: black;
+      width: 117px;
     }
 
     #van_description {
@@ -92,11 +101,29 @@
 
     #van_availability_3i {
       color: black;
+      width: 65px;
     }
 
     .form-control mx-1 date required {
       color: black;
     }
 
+    .form-row {
+      margin-right: 106px;
+    }
+
+    .col {
+      width: 96px;
+    }
+
+
+
+    .form-home {
+    width: 416px;
+    margin-right: 18px;
+    margin-bottom: 18px;
+    }
+
+ 
 }
 

@@ -1,13 +1,24 @@
 <%= simple_form_for @van do |f| %>
+
+
+<%= f.input :description %>
 <%= f.input :town %>
+ <%= f.input :availability %>
+<div class="form-row">
+    <div class="col">
+   <%= f.input :prices %>
+    </div>
+    <div class="col">
+<%= f.input :year %>
+    </div>
+     <div class="col">
+<%= f.input :kilometers %>
+    </div>
+</div>
+<%= f.input :hyppyness %>
+
 <%= f.input :pictures %>
 <%= f.input :pictures_cache, as: :hidden %>
-<%= f.input :description %>
-<%= f.input :prices %>
-<%= f.input :availability %>
-<%= f.input :year %>
-<%= f.input :kilometers %>
-<%= f.input :hyppyness %>
 <%= f.button :submit, class: "create-button" %>
 <button type="button" class="create-button"><%= link_to "Back to Dashboard", dashboards_path%> </button>
 <% end %>
