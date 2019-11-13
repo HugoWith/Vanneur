@@ -25,9 +25,12 @@
   text-align: center;
   margin: 0 auto;
   padding: 18px;
-  margin: 18px;
+  // margin: 18px;
   font-family: 'Amatic SC';
-  font-style: normal;
+  font-size: 70px;
+  font-weight: bold;
+  color: $main-color;
+
 }
 
 p {
@@ -47,13 +50,18 @@ p {
   margin-bottom: 30px;
   position: absolute;
   right: 880px;
-  bottom: -230px;
+  bottom: -100px;
 }
 
 .avatar-a {
   position: absolute;
   right: 880px;
-  bottom: -90px;
+  bottom: 30px;
   width: 56px;
   border-radius: 50%;
+}
+
+.bg-img {
+  display: flex;
+  align-items: center;
 }
