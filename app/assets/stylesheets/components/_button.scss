@@ -1,7 +1,7 @@
 .create-button {
-    font: 16px $headers-font;
-    padding: 6px 13px;
-    background-color: #BADFDB;
+  font: 16px $headers-font;
+  padding: 6px 13px;
+  background-color: #BADFDB;
     // color: rgb(51, 51, 51);
     // -webkit-border-radius: 13px;
     // -moz-border-radius: 13px;
@@ -9,17 +9,25 @@
     border-width: 0;
     color: $main-color;
     margin-bottom: 30px;
-    };
+  };
 
-    .create-button-submit {
-        margin-left: 8px;
-        color: white;
-        text-decoration: none;
-        font: 16px $headers-font;
-        padding: 6px 13px;
-        background-color: rgb(60, 178, 201);
+  .create-button-submit {
+    margin-left: 8px;
+    color: white;
+    text-decoration: none;
+    font: 16px $headers-font;
+    padding: 6px 13px;
+    background-color: rgb(60, 178, 201);
         // color: rgb(51, 51, 51);
         // -webkit-border-radius: 13px;
         // -moz-border-radius: 13px;
         border-radius: 13px;
-    }
+      }
+
+.create-button:hover {
+
+  background-color: #FFF;
+  color: #BADFDB;
+  transition: 0.8s ease-in-out;
+
+  };
