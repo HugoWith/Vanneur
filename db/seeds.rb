@@ -79,41 +79,49 @@ van2 = Van.create!(
   # remote_pictures_url: "https://images.unsplash.com/photo-1535655685871-dc8158ff167e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80",
   owner: kev)
 
-# van3 = Van.create!(
-#   town: "Vannes",
-#   description: "Merveilleux van. Rangements et rideaux disponibles. A déjà servi pour faire un sacré tour d'Australie",
-#   prices:"80",
-#   availability: Date.new(2019,12,26),
-#   hyppyness: true,
-#   year: 2006,
-#   kilometers: 70.000,
-#   owner: hugo)
+van3 = Van.create!(
+  town: "Vannes",
+  description: "Merveilleux van. Rangements et rideaux disponibles. A déjà servi pour faire un sacré tour d'Australie",
+  prices:"80",
+  availability: Date.new(2019,12,26),
+  hyppyness: true,
+  year: 2006,
+  pictures: Cloudinary::CarrierWave::StoredFile.new("image/upload/v1573666854/osycup09ijhu6r7ennif.jpg"),
+  # remote_pictures_url: "https://images.unsplash.com/photo-1520116468816-95b69f847357?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+  kilometers: 70.000,
+  owner: hugo)
 
-# van4 = Van.create!(
-#   town: "Lyon",
-#   description: "A fait de la route mais la tient encore. Mignon comme tout. Vaisselle et rangements dispos.",
-#   prices:"75",
-#   availability: Date.new(2019,12,30),
-#   hyppyness: true,
-#   year: 2010,
-#   kilometers: 75.000,
-#   owner: marine)
+van4 = Van.create!(
+  town: "Lyon",
+  description: "A fait de la route mais la tient encore. Mignon comme tout. Vaisselle et rangements dispos.",
+  prices:"75",
+  availability: Date.new(2019,12,30),
+  hyppyness: true,
+  year: 2010,
+  kilometers: 75.000,
+  pictures: Cloudinary::CarrierWave::StoredFile.new("image/upload/v1573666856/jabgw3z7lxpzj21ejlsx.jpg"),
+  # remote_pictures_url: "https://images.unsplash.com/photo-1527786356703-4b100091cd2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+  owner: marine)
 
-# van5 = Van.create!(
-#   town: "Paris",
-#   description: "Van pour 2. Lit hyper confortable. Rangements prévus. Prêt à rouler",
-#   prices:"75",
-#   availability: Date.new(2019,12,30),
-#   hyppyness: true,
-#   year: 2015,
-#   kilometers: 30.000,
-#   owner: kev)
+van5 = Van.create!(
+  town: "Paris",
+  description: "Van pour 2. Lit hyper confortable. Rangements prévus. Prêt à rouler",
+  prices:"75",
+  availability: Date.new(2019,12,30),
+  hyppyness: true,
+  year: 2015,
+  kilometers: 30.000,
+  pictures: Cloudinary::CarrierWave::StoredFile.new("image/upload/v1573666857/kf7qzgexsoct5b7bma22.jpg"),
+  # remote_pictures_url: "https://images.unsplash.com/photo-1569135218372-6f7f6f3d7e55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+  owner: kev)
 
-# van6 = Van.create!(
-#   town: "Vannes",
-#   description: "Idéal de 2 à 4 personnes, ce california de 2018 est en parfait état. Modèle haut de gamme: Océan 204 CV Diesel, et 4 roues motrices.",
-#   prices:"82",
-#   availability: Date.new(2019,12,27),
-#   year: 2018,
-#   kilometers: 33.000,
-#   owner: jojo)
+van6 = Van.create!(
+  town: "Vannes",
+  description: "Idéal de 2 à 4 personnes, ce california de 2018 est en parfait état. Modèle haut de gamme: Océan 204 CV Diesel, et 4 roues motrices.",
+  prices:"82",
+  availability: Date.new(2019,12,27),
+  year: 2018,
+  kilometers: 33.000,
+  pictures: Cloudinary::CarrierWave::StoredFile.new("image/upload/v1573666858/art4mcajntvjvnygb7mg.jpg"),
+  # remote_pictures_url: "https://images.unsplash.com/photo-1524090485940-4ded7244c483?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=943&q=80",
+  owner: jojo)
