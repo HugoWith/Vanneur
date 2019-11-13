@@ -1,13 +1,13 @@
 class Van < ApplicationRecord
   mount_uploader :pictures, PhotoUploader
   belongs_to :owner, class_name: 'User'
-
   has_many :rentals
 
   validates :availability, presence: true
   validates :prices, presence: true
   validates :town, presence: true
-
+  geocoded_by :town
+  after_validation :geocode, if: :will_save_change_to_town?
   def image
     if pictures.present?
       pictures
