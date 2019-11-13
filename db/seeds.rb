@@ -14,6 +14,8 @@ puts "vans destroyed"
 Rental.destroy_all
 puts "rentals destroyed"
 
+# nos locataires : marin, alex
+
 
 hugo = User.create!(
   email: "hugo@beteur.fr",
@@ -52,7 +54,7 @@ kev = User.create!(
   last_name:"Cha")
 
 van1 = Van.create!(
-  town: "Lyon",
+  town: "Vannes",
   description: "van 2 places à l'avant, très bien équipé. Parfait pour quelques semaines de trip !",
   prices:"50",
   availability: Date.new(2019,12,26),
@@ -62,7 +64,7 @@ van1 = Van.create!(
   owner: kev)
 
 van2 = Van.create!(
-  town: "Lyon",
+  town: "Vannes",
   description: "Van tout équipé, prêt à prendre la route",
   prices:"50",
   availability: Date.new(2019,12,26),
@@ -72,7 +74,7 @@ van2 = Van.create!(
   owner: kev)
 
 van3 = Van.create!(
-  town: "Lyon",
+  town: "Vannes",
   description: "Merveilleux van. Rangements et rideaux disponibles. A déjà servi pour faire un sacré tour d'Australie",
   prices:"80",
   availability: Date.new(2019,12,26),
@@ -82,7 +84,7 @@ van3 = Van.create!(
   owner: hugo)
 
 van4 = Van.create!(
-  town: "Lyon",
+  town: "Vannes",
   description: "A fait de la route mais la tient encore. Mignon comme tout. Vaisselle et rangements dispos.",
   prices:"75",
   availability: Date.new(2019,12,30),
@@ -92,7 +94,7 @@ van4 = Van.create!(
   owner: marine)
 
 van5 = Van.create!(
-  town: "Lyon",
+  town: "Vannes",
   description: "Van pour 2. Lit hyper confortable. Rangements prévus. Prêt à rouler",
   prices:"75",
   availability: Date.new(2019,12,30),
@@ -100,3 +102,12 @@ van5 = Van.create!(
   year: 2015,
   kilometers: 30.000,
   owner: kev)
+
+van6 = Van.create!(
+  town: "Vannes",
+  description: "Idéal de 2 à 4 personnes, ce california de 2018 est en parfait état. (avril 2018, - 33 000 km). C'est un VAN, et donc il passe quasiment partout comme une voiture. Il s'agit du modèle haut de gamme: Océan 204 CV Diesel, et 4 roues motrices. Il a quasiment toutes les options possibles.",
+  prices:"82",
+  availability: Date.new(2019,12,27),
+  year: 2018,
+  kilometers: 33.000,
+  owner: jojo)
