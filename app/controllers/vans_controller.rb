@@ -11,7 +11,7 @@ class VansController < ApplicationController
 
   def new
     @van = Van.new
-  end
+      end
 
   def create
     @van = Van.new(vans_params)
@@ -36,6 +36,7 @@ class VansController < ApplicationController
 
   def search
     @vans = Van.new
+
   end
 
   private
