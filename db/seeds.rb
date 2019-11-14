@@ -80,7 +80,7 @@ van2 = Van.create!(
   owner: kev)
 
 van3 = Van.create!(
-  town: "Vannes",
+  town: "Tours",
   description: "Merveilleux van. Rangements et rideaux disponibles. A déjà servi pour faire un sacré tour d'Australie",
   prices:"80",
   availability: Date.new(2019,12,26),
@@ -116,7 +116,7 @@ van5 = Van.create!(
   owner: kev)
 
 van6 = Van.create!(
-  town: "Vannes",
+  town: "Rennes",
   description: "Idéal de 2 à 4 personnes, ce california de 2018 est en parfait état. Modèle haut de gamme: Océan 204 CV Diesel, et 4 roues motrices.",
   prices:"82",
   availability: Date.new(2019,12,27),
