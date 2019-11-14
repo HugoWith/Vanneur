@@ -1,3 +1,14 @@
 // Import page-specific CSS files here.
 @import "home";
 @import "show";
+
+body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+}
+
+.main-container {
+  flex-grow: 1;
+}
