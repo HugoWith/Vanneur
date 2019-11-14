@@ -1,26 +1,19 @@
-.new {
-    font-size: 40px;
+.container-edit {
+    font-size: 20px;
     text-align: center;
-    // background-color: $main-color;
-    margin-top: 292px;
-    width: 604px;
-    // margin-left: 207px;
+    background-color: $main-color;
+    margin-top: 20px;
+    width: 400px;
     border-radius: 9px;
     // box-shadow: 10px 5px 5px lightgray;
     color: $main-color;
-}
-
-.van_new {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.unsplash.com/photo-1570630819727-b32fda434a7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-    // margin: 0 auto;
-    .form-group {
-        width: 88%;
-        margin-right: 74px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    padding: 7px;
+    h2 {
+        color: black;
+        font-family: $h2-font;
     }
-    .form-group date required van_availability {}
-    // #button-show {
-    //     margin-left: 300px;
-    // }
     a {
         text-decoration: none;
         color: $main-color;
@@ -29,19 +22,20 @@
         text-decoration: none;
         color: white;
     }
-    #button-show {
-        margin-left: 300px;
-    }
-    #button-show2 {
-        margin-left: 8px;
-        color: white;
-        text-decoration: none;
+    .van_pictures {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
     }
     .string {
         font-family: $headers-font;
         color: black;
     }
     .integer {
+        font-family: $headers-font;
+        color: black;
+    }
+    .file .optional {
         font-family: $headers-font;
         color: black;
     }
@@ -70,7 +64,7 @@
     }
     #van_availability_1i {
         color: black;
-        width: 65px;
+        width: 70px;
     }
     #van_availability_2i {
         color: black;
@@ -83,18 +77,12 @@
         color: black;
         width: 65px;
     }
-    .form-control mx-1 date required {
-        color: black;
+    .form-check {
+        display: flex;
+        justify-content: start;
     }
-    .form-row {
-        margin-right: 106px;
-    }
-    .col {
-        width: 96px;
-    }
-    .form-home {
-        width: 416px;
-        margin-right: 18px;
-        margin-bottom: 18px;
+    .van_availability {
+        display: flex;
+        justify-content: space-around;
     }
 }
