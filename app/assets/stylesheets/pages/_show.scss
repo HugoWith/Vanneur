@@ -1,23 +1,67 @@
 .container {
-  border-radius: 2px solid black;
-  color: black;
-  max-width: 900px;
-  margin: 50px auto;
-  background-size: cover;
+  max-width: 500px;
+  padding: 40px;
+  border: 3px solid white;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #E7E7E7;
+  margin-left: 120px;
 }
 
-#pic {
-
+.container-a {
+  padding: 80px;
 }
 
-#description {
-  margin-right: 200px;
+.link {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fcf9ea;
+  margin-right: 30px;
+  text-align: center;
 }
 
-h2 {
-  font: 'Roboto';
+#H {
   text-align: center;
   margin: 0 auto;
+  padding: 18px;
+  // margin: 18px;
+  font-family: 'Amatic SC';
+  font-size: 70px;
+  font-weight: bold;
+  color: $main-color;
+
 }
 
+p {
+  font-family: 'Roboto';
+  font-style: normal;
+}
 
+.banner-show {
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  margin-bottom: 30px;
+}
+
+#description-c {
+  margin-left: 300px;
+  margin-bottom: 30px;
+  position: absolute;
+  right: 880px;
+  bottom: -100px;
+}
+
+.avatar-a {
+  position: absolute;
+  right: 880px;
+  bottom: 30px;
+  width: 56px;
+  border-radius: 50%;
+}
+
+.bg-img {
+  display: flex;
+  align-items: center;
+}

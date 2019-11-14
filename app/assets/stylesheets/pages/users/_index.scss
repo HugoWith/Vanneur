@@ -1,0 +1,49 @@
+.container-signin  {
+  background-color: $main-color;
+  height: 80%;
+  padding-top: 45px;
+
+}
+
+
+.container-signin h2 {
+  text-align: center;
+  padding: 10px;
+
+}
+
+
+.form-signin {
+  width: 30%;
+  margin: auto;
+  background-color: $fourth-color;
+  opacity: 0.8;
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0,0,0, 0.3)
+
+}
+
+.form-inputs{
+  width: 75%;
+  margin: auto;
+  font-weight: bold;
+  font-family: roboto;
+}
+
+.img-signin-div {
+  width: 50%;
+  margin: 0 auto;
+  img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 147px;
+  }
+}
+
+.button-signin {
+  .create-button {
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+}
