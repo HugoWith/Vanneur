@@ -3,11 +3,11 @@ class VansController < ApplicationController
   before_action :set_van, only: [:show, :edit, :update]
 
   def index
-
     @vans = Van.all
+    p params
     filter_by_town
     filter_by_availability
-    @vans
+    filter_by_hippyness
 
     # if params[:town].empty? && params[:availability].empty?
     #     @vans = Van.all
@@ -32,6 +32,7 @@ class VansController < ApplicationController
         image_url: helpers.asset_url('noun_Van_1779339.svg')
       }
     end
+    @vans
   end
 
   def show
@@ -77,15 +78,26 @@ class VansController < ApplicationController
   end
 
   def filter_by_availability
-    return if params[:availability].empty?    
+    return if params[:availability] == [""]
     @vans = @vans.where(availability: params[:availability])
   end
 
   def filter_by_town
-    return if params[:town].empty? 
-    p @vans   
-    @vans = @vans.where("town ilike ?", "%#{params[:town]}%")
-    p @vans
-    p params[:town]
+    return if params[:town].blank?
+    # p @vans
+    @vans = @vans.where("town ilike ?", "#{params[:town].split(',').first}")
+    # p @vans
+    # p params[:town]
+  end
+
+  def filter_by_hippyness
+    if params[:hippyness]
+      ap 'hipi'
+      @vans = @vans.where("hippyness = ?", true)
+    else
+      ap 'tristou'
+      @vans = @vans.where("hippyness = ?", false)
+    end
+    ap @vans
   end
 end
