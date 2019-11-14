@@ -8,4 +8,3 @@ class PhotoUploader < CarrierWave::Uploader::Base
     super unless IDENTIFIERS.map {|id| id.split('/').last }.include?(self.identifier.split('/').last)
   end
 end
-
