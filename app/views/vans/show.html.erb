@@ -5,21 +5,21 @@
 
 
   <div class="bg-img banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('<%= cl_image_path @van.image, height: 300, width: 400, crop: :fill %>')">
-      <h2 id="H">Book your Van!</h2>
+      <h2 id="H">Book this Van!</h2>
   </div>
   <section class="container">
     <div id="userVan">
       <img class="avatar-a" alt="avatar" src="https://ca.slack-edge.com/T02NE0241-U3HFUV8DA-63795d118b7b-72" />
-      <p><strong><em>Kev Cha Van</em></strong></p>
+      <p><strong><em>Owner:</em></strong> <%= @van.owner.first_name %> <%= @van.owner.last_name %></p>
     </div>
     <div id="description-a">
-      <p><strong><em>City;</em></strong> <%= @van.town %></p>
+      <p><strong><em>City:</em></strong> <%= @van.town %></p>
     </div>
     <div id="description-b">
-      <p><strong><em>Availability;</em></strong> <%= @van.availability %></p>
+      <p><strong><em>Availability:</em></strong> <%= @van.availability %></p>
     </div>
     <div id="description-c">
-      <p><strong><em>Prices:</em></strong> <%= @van.prices %>€/J</p>
+      <p><strong><em>Prices:</em></strong> <%= @van.prices %>€/day</p>
     </div>
   </section>
   <div>
@@ -29,8 +29,8 @@
   </div>
   <section class="container-a">
     <div class="link">
-      <p><strong>Contact Kev Cha for book this Van!</strong> <a href="email">stetienne@yahoo.fr</a></p>
+      <p><strong>Contact Kev Cha for more infos!</strong> <a href="email">stetienne@yahoo.fr</a></p>
     </div>
+    <%= link_to "Book this Van", van_rentals_path(@van), class: "create-button", method: :post %>
   </section>
 </body>
-</html>

@@ -1,3 +1,4 @@
+require("@rails/ujs").start()
 import "bootstrap";
 import { initTypedJS } from '../components/typed';
 import 'mapbox-gl/dist/mapbox-gl.css'; // <-- you need to uncomment the stylesheet_pack_tag in the layout!

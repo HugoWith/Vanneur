@@ -13,12 +13,15 @@
 }
 
 .link {
-  border: 2px solid black;
-  padding: 20px;
+  border: 2px solid #badfdb;
+  padding: 10px;
   border-radius: 10px;
-  background-color: #fcf9ea;
+  background-color: #E7E7E7;
   margin-right: 30px;
   text-align: center;
+  max-width: 300px;
+  margin-left: 145px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 #H {
@@ -30,7 +33,6 @@
   font-size: 70px;
   font-weight: bold;
   color: $main-color;
-
 }
 
 p {
@@ -50,14 +52,14 @@ p {
   margin-bottom: 30px;
   position: absolute;
   right: 880px;
-  bottom: -100px;
+  bottom: -120px;
 }
 
 .avatar-a {
   position: absolute;
   right: 880px;
-  bottom: 30px;
-  width: 56px;
+  bottom: 20px;
+  width: 65px;
   border-radius: 50%;
 }
 
