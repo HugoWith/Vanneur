@@ -10,26 +10,31 @@
   <section class="container">
     <div id="userVan">
       <img class="avatar-a" alt="avatar" src="https://ca.slack-edge.com/T02NE0241-U3HFUV8DA-63795d118b7b-72" />
-      <p><strong><em>Owner:</em></strong> <%= @van.owner.first_name %> <%= @van.owner.last_name %></p>
+      <p><strong><em>Propriétaire:</em></strong> <%= @van.owner.first_name %> <%= @van.owner.last_name %></p>
     </div>
     <div id="description-a">
-      <p><strong><em>City:</em></strong> <%= @van.town %></p>
+      <p><strong><em>Ville:</em></strong> <%= @van.town %></p>
     </div>
     <div id="description-b">
-      <p><strong><em>Availability:</em></strong> <%= @van.availability %></p>
+      <p><strong><em>Disponibilité:</em></strong> <%= @van.availability %></p>
     </div>
     <div id="description-c">
-      <p><strong><em>Prices:</em></strong> <%= @van.prices %>€/day</p>
+      <p><strong><em>Prix:</em></strong> <%= @van.prices %>€/jour</p>
     </div>
   </section>
-  <div>
-    <div class="calendar">
+  <div class="container-a">
+    <div class="form-wrapper" style="width: 400px; margin: 0 auto;">
+      <h2>RESERVATION</h2>
 
+      <%= simple_form_for :search, method: "get" do |f| %>
+      <%= f.input :début, as: :string, required: false, input_html: {class: "datepicker"} %>
+      <%= f.input :fin, as: :string, required: false, input_html: {class: "datepicker"} %>
+      <% end %>
     </div>
   </div>
-  <section class="container-a">
+  <section class="container-b">
     <div class="link">
-      <p><strong>Contact Kev Cha for more infos!</strong> <a href="email">stetienne@yahoo.fr</a></p>
+      <p><strong>Contacte Kev Cha pour plus d'infos!</strong> <a href="email">stetienne@yahoo.fr</a></p>
     </div>
     <div class="btn-show">
     <%= link_to "Book this Van", van_rentals_path(@van), class: "create-button", method: :post %>
