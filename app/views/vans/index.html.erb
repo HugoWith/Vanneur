@@ -1,45 +1,35 @@
 
 
 <div class="d-flex banner-index" style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(https://images.unsplash.com/photo-1502364069473-6237fca2b87e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80);">
-
-
-
-    <h2>ILS N'ATTENDENT QUE TOI</h2>
-
-
+  <h2>ILS N'ATTENDENT QUE TOI</h2>
 </div>
 
 <div class="container-index">
   <div class="cards-index">
 
     <% @vans.each do |vans| %>
-
-    <div class="card-category-index" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path vans.image, height: 300, width: 400, crop: :fill %>')">
-      <%= link_to van_path(vans) do %>
-     <div class="text-center">
-      <h2 class="prices-index"> <%= vans.prices %> € /Jour </h2>
-      <p class="description-index" > <%= vans.description %></p>
-      <% end %>
-    </div>
-
+      <div class="card-category-index" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path vans.image, height: 300, width: 400, crop: :fill %>')">
+        <%= link_to van_path(vans) do %>
+          <div class="text-center">
+            <h2 class="prices-index"> <%= vans.prices %> € /Jour </h2>
+            <p class="description-index" > <%= vans.description %></p>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
   </div>
-  <% end %>
 
+  <div class="mb-4">
+    <%= link_to 'Add Your Van 🚌', new_van_path, class: 'create-button button-index' %>
+    <%= link_to 'Nouvelle recherche 🔎',  vans_search_path, class: 'create-button button-index' %>
+  </div>
 
-</div>
-
-<div class="mb-4">
-<%= link_to 'Add Your Van 🚌', new_van_path, class: 'create-button button-index' %>
-<%= link_to 'Nouvelle recherche 🔎',  vans_search_path, class: 'create-button button-index' %>
-</div>
-
-<div
-  id="map"
-  style="width: 100%;
-  height: 600px;"
-  data-markers="<%= @markers.to_json %>"
-  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-></div>
+  <div
+    id="map"
+    style="width: 100%;
+    height: 600px;"
+    data-markers="<%= @markers.to_json %>"
+    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+  ></div>
 
 </div>
-
