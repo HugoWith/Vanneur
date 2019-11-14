@@ -2,28 +2,23 @@
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
-
 // External libraries
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-
 @import "pages/vans/new";
 @import "pages/vans/index";
 @import "pages/Dashboard/index";
-
+@import "pages/vans/edit";
 @import "pages/users/index";
 @import "pages/users/registration";
-
 a {
-  text-decoration: none;
-
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
