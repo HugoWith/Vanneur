@@ -2,23 +2,23 @@
 
 
 <%= f.input :description, placeholder: 'Détails ici' %>
-<%= f.input :town, placeholder: 'Chambery' %>
- <%= f.input :availability %>
+<%= f.input :town, placeholder: 'Chambery', label: 'Ville' %>
+ <%= f.input :availability, label: 'Disponible le' %>
 <div class="form-row">
     <div class="col">
-   <%= f.input :prices, placeholder: '150€' %>
+   <%= f.input :prices, placeholder: '120€', label: 'Prix / j' %>
     </div>
     <div class="col">
-<%= f.input :year, placeholder: '1986' %>
+<%= f.input :year, placeholder: '2008', label: 'Année' %>
     </div>
      <div class="col">
-<%= f.input :kilometers, placeholder: '170 000' %>
+<%= f.input :kilometers, placeholder: '70 000', label: 'kms' %>
     </div>
 </div>
-<%= f.input :hippyness %>
+<%= f.input :hippyness, label: 'Van de hippie'%>
 
-<%= f.input :pictures %>
+<%= f.input :pictures, label: 'Mettez une photo de votre van' %>
 <%= f.input :pictures_cache, as: :hidden %>
-<%= f.button :submit, class: "create-button" %>
-<button type="button" class="create-button"><%= link_to "Back to Dashboard", dashboards_path%> </button>
+<%= f.button :submit, class: "create-button", value: 'Créer votre van' %>
+<button type="button" class="create-button"><%= link_to "Retour au dashboard", dashboards_path%> </button>
 <% end %>
