@@ -20,7 +20,7 @@
   margin-right: 30px;
   text-align: center;
   max-width: 300px;
-  margin-left: 145px;
+  margin-left: 142px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -66,4 +66,17 @@ p {
 .bg-img {
   display: flex;
   align-items: center;
+}
+
+.btn-show {
+  display: flex;
+  position: absolute;
+  right: 120px;
+  bottom: 20px;
+}
+
+.create-button {
+  padding: 15px;
+  width: 500px;
+  text-align: center;
 }
