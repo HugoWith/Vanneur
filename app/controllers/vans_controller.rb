@@ -3,7 +3,26 @@ class VansController < ApplicationController
   before_action :set_van, only: [:show, :edit, :update]
 
   def index
+
     @vans = Van.all
+    filter_by_town
+    filter_by_availability
+    @vans
+
+    # if params[:town].empty? && params[:availability].empty?
+    #     @vans = Van.all
+    #   elsif params[:town].empty?
+    #     availability = params[:availability]
+    #     @vans = Van.where("availability = ?", availability)
+    #   elsif params[:availability].empty?
+    #     town = params[:town]
+    #     @vans = Van.where("town ilike ?", "%#{town}")
+    #   else
+    #     town = params[:town]
+    #     availability = params[:availability].first
+    #     @vans = Van.where("town ILIKE ? and availability = ?" , "%#{town}", availability)
+    #   end
+    # @vans = Van.all
     @vans_geo = Van.geocoded
     @markers = @vans_geo.map do |van|
       {
@@ -55,5 +74,18 @@ class VansController < ApplicationController
 
   def vans_params
     params.require(:van).permit(:town, :pictures, :description, :prices, :availability, :year, :kilometers, :hyppyness, :picture_cache)
+  end
+
+  def filter_by_availability
+    return if params[:availability].empty?    
+    @vans = @vans.where(availability: params[:availability])
+  end
+
+  def filter_by_town
+    return if params[:town].empty? 
+    p @vans   
+    @vans = @vans.where("town ilike ?", "%#{params[:town]}%")
+    p @vans
+    p params[:town]
   end
 end
