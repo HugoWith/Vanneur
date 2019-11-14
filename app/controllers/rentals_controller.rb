@@ -3,7 +3,6 @@ class RentalsController < ApplicationController
     @rental = Rental.new
     @van = Van.find(params[:van_id])
     @rental.van = @van
-    @rental.owner = @van.owner
     @rental.rental_date = @van.availability
     @rental.customer = current_user
     @rental.save
