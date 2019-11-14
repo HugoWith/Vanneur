@@ -12,13 +12,28 @@
     <div class="form-home">
       <h2><span id="vannez"><strong><em>Vannez</em> </strong></span>voyager avec nous !</h2>
 
-      <%= simple_form_for @vans do |f| %>
-      <%= f.input :town, label: 'Case départ' %>
+      <%= simple_form_for @vans do |f| %> 
       <%= f.input :availability, label: 'On part quand ?'%>
       <%= f.input :availability, label: 'On revient quand ?'%>
       <%= f.input :hippyness, label: 'Peace ou pas peace ? 🚌' %>
       <%= link_to 'Go ! ✌️', vans_path, class: 'create-button'%>
       <% end %>
+
+      <%= form_tag vans_path, method: :get do %>
+        <%= label_tag(:town, 'Case départ') %>
+        <%= text_field_tag(:town, params[:town], id: 'van_town') %>
+        <%= label_tag(:availability, 'On part quand ?') %>
+        <%= date_field(:availability, nil, id: 'van_date') %>
+        <%#= label_tag(:availability, 'On revient quand ?') %>
+        <%#= date_field(:availability, nil, id: 'van_date') %>
+        <%= label_tag(:hyppyness, 'On revient quand ?') %>
+        <%= check_box_tag(:hyppyness)  %> 
+        <%= submit_tag "Search", class: "btn btn-primary" %>
+      <% end %>
+      
+      
+      
+
     </div>
   </div>
 </div>
