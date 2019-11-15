@@ -37,7 +37,10 @@
       <p><strong>Contacte Kev Cha pour plus d'infos!</strong> <a href="email">stetienne@yahoo.fr</a></p>
     </div>
     <div class="btn-show">
-    <%= link_to "Book this Van", van_rentals_path(@van), class: "create-button", method: :post %>
+    <%= link_to "Réserver ce Van", van_rentals_path(@van), class: "create-button", method: :post %>
+    </div>
+    <div class="btn-back-van">
+    <%= link_to "Retour à la Vannerie 🏎", vans_path(@vans), class: "create-button", method: :get %>
     </div>
   </section>
 </body>
