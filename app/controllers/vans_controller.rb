@@ -4,26 +4,11 @@ class VansController < ApplicationController
 
   def index
     @vans = Van.all
-    p params
     filter_by_town
     filter_by_availability
     filter_by_hippyness
 
-    # if params[:town].empty? && params[:availability].empty?
-    #     @vans = Van.all
-    #   elsif params[:town].empty?
-    #     availability = params[:availability]
-    #     @vans = Van.where("availability = ?", availability)
-    #   elsif params[:availability].empty?
-    #     town = params[:town]
-    #     @vans = Van.where("town ilike ?", "%#{town}")
-    #   else
-    #     town = params[:town]
-    #     availability = params[:availability].first
-    #     @vans = Van.where("town ILIKE ? and availability = ?" , "%#{town}", availability)
-    #   end
-    # @vans = Van.all
-    @vans_geo = Van.geocoded
+    @vans_geo = @vans.geocoded
     @markers = @vans_geo.map do |van|
       {
         lat: van.latitude,
@@ -32,7 +17,6 @@ class VansController < ApplicationController
         image_url: helpers.asset_url('noun_Van_1779339.svg')
       }
     end
-    @vans
   end
 
   def show
@@ -78,7 +62,7 @@ class VansController < ApplicationController
   end
 
   def filter_by_availability
-    return if params[:availability] == [""]
+    return if params[:availability] == [""] || params[:availability].nil? || params[:availability].blank?
     @vans = @vans.where(availability: params[:availability])
   end
 
@@ -91,13 +75,10 @@ class VansController < ApplicationController
   end
 
   def filter_by_hippyness
-    if params[:hippyness]
-      ap 'hipi'
+    if params[:hippyness].present?
       @vans = @vans.where("hippyness = ?", true)
     else
-      ap 'tristou'
-      @vans = @vans.where("hippyness = ?", false)
+      return
     end
-    ap @vans
   end
 end
