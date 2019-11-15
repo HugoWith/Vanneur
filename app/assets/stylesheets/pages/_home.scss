@@ -10,10 +10,9 @@
 .form-home {
   background-color: rgba(252,249,234, 0.95);
   width: 35%;
-  padding: 10px;
+  padding: 20px;
   padding-bottom: 20px;
   border-radius: 7px;
-
 }
 
 h1 {
@@ -38,4 +37,21 @@ h3 {
 .explorer h2{
   font-weight: bolder;
   padding: 15px;
+}
+
+#availabitily {
+  margin-top: 18px;
+}
+
+#van_date {
+  border-radius: 8px;
+  border-width: 0px;
+  border: 1px solid #CCC;
+  padding-left: 5px;
+}
+
+#hippyness {
+  margin-left: 10px;
+  margin-top: 5px;
+
 }
