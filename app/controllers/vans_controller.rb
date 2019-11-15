@@ -9,7 +9,7 @@ class VansController < ApplicationController
     filter_by_availability
     filter_by_hippyness
 
-    @vans_geo = Van.geocoded
+    @vans_geo = @vans.geocoded
     @markers = @vans_geo.map do |van|
       {
         lat: van.latitude,
