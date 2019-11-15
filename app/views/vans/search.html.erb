@@ -13,23 +13,22 @@
       <h2><span id="vannez"><strong><em>Vannez</em> </strong></span>voyager avec nous !</h2>
 
 
-      <%= simple_form_for @vans do |f| %>
-      <%= f.input :availability, label: 'On part quand ?'%>
-      <%= f.input :availability, label: 'On revient quand ?'%>
-      <%= f.input :hippyness, label: 'Peace ou pas peace ? 🚌' %>
-      <%= link_to 'Go ! ✌️', vans_path, class: 'create-button'%>
-      <% end %>
+
 
       <%= form_tag vans_path, method: :get do %>
         <%= label_tag(:town, 'Case départ') %>
         <%= text_field_tag(:town, params[:town], id: 'van_town') %>
-        <%= label_tag(:availability, 'On part quand ?') %>
-        <%= date_field(:availability, nil, id: 'van_date') %>
-        <%#= label_tag(:availability, 'On revient quand ?') %>
-        <%#= date_field(:availability, nil, id: 'van_date') %>
-        <%= label_tag(:hippyness, 'Un van de hippie ?') %>
-        <%= check_box_tag(:hippyness)  %>
-        <%= submit_tag 'Go ! ✌️', class: "create-button" %>
+          <div class="d-flex justify-content-between" id="availabitily">
+          <%= label_tag(:availability, 'On part quand ?', id: 'van_date_label') %>
+          <%= date_field(:availability, nil, id: 'van_date') %>
+          </div>
+            <div class="d-flex justify-content-beetween" style="margin-top: 18px">
+            <%= label_tag(:hippyness, 'Un van de hippie ?') %>
+            <%= check_box_tag(:hippyness)%>
+            </div>
+            <div class="d-flex justify-content-center">
+            <%= submit_tag 'Go ! ✌️', class: "create-button", style:"margin-bottom: 0px" %>
+            </div>
       <% end %>
     </div>
   </div>
