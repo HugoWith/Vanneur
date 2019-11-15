@@ -6,7 +6,8 @@ class RentalsController < ApplicationController
     @rental.rental_date = @van.availability
     @rental.customer = current_user
     @rental.save
-    redirect_to dashboards_path
+
+    redirect_to dashboards_path, booking_success: "Van bien réservé, bonnne route!😎"
   end
 
   def destroy
