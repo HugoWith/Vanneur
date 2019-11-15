@@ -1,98 +1,103 @@
+.imgvan{
+  width: 50px;
+  height: 50px;
+  float: right;
+}
 
-.van-show {
 
-  .container-van-show {
-    max-width: 500px;
-    padding: 40px;
-    border: 2px solid white;
-    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    background-color: $main-color;
-    margin-left: 120px;
-    margin-top: 50px;
-  }
-  .link {
-    border: 2px solid white;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: $main-color;
-    text-align: center;
-    max-width: 500px;
-    margin-left: 40px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  }
-  #H {
-    text-align: center;
-    margin: 0 auto;
-    padding: 18px;
-    // margin: 18px;
-    font-family: 'Amatic SC';
-    font-size: 70px;
-    font-weight: bold;
-    color: $main-color;
-  }
-  p {
-    font-family: 'Roboto';
-    font-style: normal;
-  }
-  .container-b {
-    padding: 80px;
-  }
-  .banner-show {
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    margin-bottom: 30px;
-  }
-  #description-c {
-    margin-left: 300px;
-    margin-bottom: 30px;
-    position: absolute;
-    right: 880px;
-    bottom: -150px;
-  }
-  .avatar-a {
-    position: absolute;
-    right: 880px;
-    bottom: -10px;
-    width: 70px;
-    border-radius: 50%;
-  }
-  .bg-img {
-    display: flex;
-    align-items: center;
-  }
-  .btn-show {
-    display: flex;
-    position: absolute;
-    right: 120px;
-    bottom: -250px;
-  }
-  .create-button {
-    padding: 15px;
-    width: 500px;
-    text-align: center;
-    border: 1px solid #ffc5a1;
-  }
-  .container-a {
-    border: 2px solid white;
-    text-align: center;
-    border-radius: 8px;
-    background-color: $main-color;
-    width: 500px;
-    position: absolute;
-    right: 120px;
-    bottom: -150px;
-    padding-bottom: 10px;
-  }
+.avatar-a{
+  width: 80px;
+  border-radius: 50%;
+  position: relative;
+  right: -204px;
+  top: -24px;
+}
+
+
+
+.banner-show {
+
   h2 {
-    font-family: 'Amatic SC';
+    color: #fcf9ea;
+    margin: auto;
+    font-family: 'roboto';
+    font-size: 30px;
   }
-  .btn-back-van {
-    margin-left: 890px;
-    .create-button {
-    border: 1px solid #ffc5a1;
-    }
+
+}
+
+.container-show-van{
+  width: 1080px;
+  margin: 0 auto;
+}
+
+
+#contact-show {
+
+  width: 20%;
+  text-align: center;
+  margin-top: 10px;
+  padding:10px;
+  a{
+    text-decoration: none;
+    color: $main-color;
   }
 }
 
+
+
+.cards-userVan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+
+}
+
+.card-category-infos{
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 10px #DCDCDC;
+  padding: 10px;
+
+}
+
+.button-booking {
+  float: right;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
