@@ -1,47 +1,76 @@
 
+<div class="container-owner">
 
 
 
-<h2>Je suis dans no Owner</h2>
+  <div class="d-flex">
+    <div class="container-cards">
+      <h2>Mon Garage 🔧</h2>
+      <div class="card-owner">
+       <% @owned_vans.each do |vans| %>
 
+       <%= cl_image_tag vans.image %>
+       <div class="card-owner-infos" >
+        <div>
 
-<div class="d-flex">
-
-  <div id= "past-locations mr-3">
-    <h2 class="mb-3 ml-3">Locations passées</h2>
-    <div class="past-location-card d-flex bg-white p-2 rounded shadow mb-3 ml-3">
-      <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80" alt="picture of the rented van" style="width:150px">
-      <div class = "ml-2">
-        <p>30 juillet 2019 - 15 août 2019</p>
-        <p><em>Un van kiffeur</em></p>
+          <h2> <%= vans.town %> </h2>
+          <p><em><%= vans.description %></em></p>
+        </div>
+        <h2 class="card-owner-pricing"> <%= vans.prices %> €</h2>
+        <img src="https://kitt.lewagon.com/placeholder/users/kevcha" class="card-owner-user avatar-bordered" />
       </div>
+      <% end %>
     </div>
-   <div class="past-location-card d-flex bg-white p-2 rounded shadow mb-3 ml-3">
-      <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80" alt="picture of the rented van" style="width: 150px;">
-      <div class = "ml-2">
-        <p>1er mai 2019 - 10 mai 2019</p>
-        <p><em>Un autre van kiffeur</em></p>
-      </div>
-    </div>
+
+    <%= link_to 'Pimp ton Van 🚌', edit_van_path(@vans), class: 'create-button button-dashboard-owner' %>
   </div>
 
-  <div id= "future-locations">
-    <h2 class="ml-3">Locations à venir</h2>
-    <p class = "ml-3">Pas de locations pour le moment ! Avez-vous mis à jour vos disponibilités ?</p>
+
+
+
+
+  <div class="calendrier-dash" >
+    <h2>Ton van vadrouille ? 📆</h2>
+    <img src="https://pai.org/wp-content/uploads/2018/06/icon-gold-calendar-heart.png">
   </div>
 
-  <div class="actions-menu">
-    <div class="vans ml-3">
-      <%=  link_to "Voir votre van"%>
-      <br>
-      <%= link_to "Vous avez un nouveau van ?", new_van_path %>
+
+
+
+  <div class="past-renting">
+    <h2>Locations passées ⏱</h2>
+    <div class="card-owner" id="card-renting">
+      <div class="cards-infos-full">
+        <img  id="img-renting" src="https://images.unsplash.com/photo-1501393224177-f03d54d3467e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+        <div class="card-owner-infos">
+          <div>
+            <h2>Une loc 4 étoiles</h2>
+          </div>
+          <img src="https://kitt.lewagon.com/placeholder/users/leabelzunces" class="card-owner-user avatar-bordered" />
+        </div>
+      </div>
+
+      <div class="cards-infos-full">
+        <img  id="img-renting" src="https://images.unsplash.com/photo-1501393224177-f03d54d3467e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+        <div class="card-owner-infos">
+          <div>
+            <h2>Une loc 5 étoiles</h2>
+          </div>
+          <img src="https://kitt.lewagon.com/placeholder/users/leabelzunces" class="card-owner-user avatar-bordered" />
+        </div>
+      </div>
+
+
+
+
+
+
     </div>
-    <div class= "planning ml-3">
-      <h4>Ici il y aura un beau calendrier</h4>
-      <%= link_to "Modifier vos disponibilités" %>
-    </div>
+    <%= link_to "Vous avez un nouveau van ?", new_van_path, class: 'create-button button-dashboard-owner' %>
+
   </div>
 
 
 </div>
+
 
