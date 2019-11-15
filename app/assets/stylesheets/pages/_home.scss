@@ -10,10 +10,10 @@
 .form-home {
   background-color: rgba(252,249,234, 0.95);
   width: 35%;
-  padding: 10px;
+  padding: 20px;
   padding-bottom: 20px;
   border-radius: 7px;
-
+  box-shadow: inset 0 0 10px #000000
 }
 
 h1 {
@@ -45,9 +45,11 @@ h3 {
 }
 
 #van_date {
-  border-radius: 3px;
+  border-radius: 8px;
 }
 
 #hippyness {
   margin-left: 10px;
+  margin-top: 5px;
+
 }
