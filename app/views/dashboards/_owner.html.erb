@@ -7,16 +7,19 @@
     <div class="container-cards">
       <h2>Mon Garage 🔧</h2>
       <div class="card-owner">
-
-        <img src="https://images.unsplash.com/photo-1569346306867-b2c7a6b22099?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80" />
+         <% @owned_vans.each do |vans| %>
+<!--         <img src="https://images.unsplash.com/photo-1569346306867-b2c7a6b22099?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80" />
+ -->        <%= cl_image_tag vans.pictures %>
         <div class="card-owner-infos">
           <div>
-            <h2>1er mai 2019 - 10 mai 2019</h2>
-            <p><em>Un van kiffeur</em></p>
+
+            <h2> <%= vans.town %> </h2>
+            <p><em><%= vans.description %></em></p>
           </div>
-          <h2 class="card-owner-pricing">150 €</h2>
+          <h2 class="card-owner-pricing"> <%= vans.prices %> €</h2>
           <img src="https://kitt.lewagon.com/placeholder/users/kevcha" class="card-owner-user avatar-bordered" />
         </div>
+        <% end %>
       </div>
 
       <%= link_to 'Pimp ton Van 🚌', edit_van_path(@vans), class: 'create-button button-dashboard-owner' %>
@@ -27,7 +30,7 @@
 
 
     <div class="calendrier-dash" >
-      <h2>Ton van vadrouille ?</h2>
+      <h2>Ton van vadrouille ? 📆</h2>
       <img src="https://pai.org/wp-content/uploads/2018/06/icon-gold-calendar-heart.png">
     </div>
 
@@ -35,13 +38,13 @@
 
 
     <div class="past-renting">
-      <h2>Locations passées</h2>
+      <h2>Locations passées ⏱</h2>
       <div class="card-owner" id="card-renting">
         <div class="cards-infos-full">
           <img  id="img-renting" src="https://images.unsplash.com/photo-1501393224177-f03d54d3467e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
           <div class="card-owner-infos">
             <div>
-              <h2>Une loc 5 étoiles</h2>
+              <h2>Une loc 4 étoiles</h2>
             </div>
             <img src="https://kitt.lewagon.com/placeholder/users/leabelzunces" class="card-owner-user avatar-bordered" />
           </div>
@@ -63,7 +66,7 @@
 
 
       </div>
-      <%= link_to "Vous avez un nouveau van ?", new_van_path %>
+      <%= link_to "Vous avez un nouveau van ?", new_van_path, class: 'create-button button-dashboard-owner' %>
     </div>
 
 
