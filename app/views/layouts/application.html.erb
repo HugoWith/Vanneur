@@ -16,14 +16,6 @@
   <%= render 'shared/flashes' %>
   <div class="main-container">
 
-    <% if booking_success %>
-      <p>
-        <hr>
-          <%= booking_success %>
-        <hr>
-      </p>
-  <% end %>
-
   <%= yield %>
   </div>
   <%= render 'shared/footer' %>

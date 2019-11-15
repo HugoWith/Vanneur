@@ -72,6 +72,7 @@
     padding: 15px;
     width: 500px;
     text-align: center;
+    border: 1px solid #ffc5a1;
   }
   .container-a {
     border: 2px solid white;
@@ -86,6 +87,12 @@
   }
   h2 {
     font-family: 'Amatic SC';
+  }
+  .btn-back-van {
+    margin-left: 890px;
+    .create-button {
+    border: 1px solid #ffc5a1;
+    }
   }
 }
 
