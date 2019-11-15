@@ -4,7 +4,6 @@ class VansController < ApplicationController
 
   def index
     @vans = Van.all
-    p params
     filter_by_town
     filter_by_availability
     filter_by_hippyness
