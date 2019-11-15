@@ -7,4 +7,9 @@ class User < ApplicationRecord
   has_many :rentals, foreign_key: :customer_id, dependent: :destroy
   has_many :vans, foreign_key: :owner_id, dependent: :destroy
   has_many :rented_vans, through: :rentals, source: :van, class_name: 'Van'
+
+
+  def owner?
+    vans.any?
+  end
 end
