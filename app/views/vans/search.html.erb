@@ -12,6 +12,7 @@
     <div class="form-home">
       <h2><span id="vannez"><strong><em>Vannez</em> </strong></span>voyager avec nous !</h2>
 
+
       <%= simple_form_for @vans do |f| %>
       <%= f.input :availability, label: 'On part quand ?'%>
       <%= f.input :availability, label: 'On revient quand ?'%>
@@ -30,10 +31,6 @@
         <%= check_box_tag(:hippyness)  %>
         <%= submit_tag 'Go ! ✌️', class: "create-button" %>
       <% end %>
-
-
-
-
     </div>
   </div>
 </div>
