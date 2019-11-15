@@ -8,9 +8,9 @@
       <h2>Mon Garage 🔧</h2>
       <div class="card-owner">
          <% @owned_vans.each do |vans| %>
-<!--         <img src="https://images.unsplash.com/photo-1569346306867-b2c7a6b22099?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80" />
- -->        <%= cl_image_tag vans.pictures %>
-        <div class="card-owner-infos">
+
+     <%= cl_image_tag vans.image %>
+        <div class="card-owner-infos" >
           <div>
 
             <h2> <%= vans.town %> </h2>
