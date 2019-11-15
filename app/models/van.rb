@@ -8,6 +8,7 @@ class Van < ApplicationRecord
   validates :town, presence: true
   geocoded_by :town
   after_validation :geocode, if: :will_save_change_to_town?
+
   def image
     if pictures.present?
       pictures
