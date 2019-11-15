@@ -33,8 +33,9 @@
     </div>
   </div>
   <section class="container-b">
-    <div class="link">
-      <p><strong>Contacte Kev Cha pour plus d'infos!</strong> <a href="email">stetienne@yahoo.fr</a></p>
+    <div class="">
+      <%= link_to "Contacte le propriétaire pour plus d'infos!", "mailto:stetienne@yahoo.fr", class: "create-button" %>
+<!--       <p><strong>Contacte Kev Cha pour plus d'infos!</strong> <a href="email">stetienne@yahoo.fr</a></p> -->
     </div>
     <div class="btn-show">
     <%= link_to "Réserver ce Van", van_rentals_path(@van), class: "create-button", method: :post %>
