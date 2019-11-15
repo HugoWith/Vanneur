@@ -1,5 +1,5 @@
 
-<body>
+<body class="van-show">
 
     <%# <h2 id="H">Book your Van!</h2> %>
 
@@ -7,7 +7,7 @@
   <div class="bg-img banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('<%= cl_image_path @van.image, height: 300, width: 400, crop: :fill %>')">
       <h2 id="H">Book this Van!</h2>
   </div>
-  <section class="container">
+  <section class="container-van-show">
     <div id="userVan">
       <img class="avatar-a" alt="avatar" src="https://ca.slack-edge.com/T02NE0241-U3HFUV8DA-63795d118b7b-72" />
       <p><strong><em>Propriétaire:</em></strong> <%= @van.owner.first_name %> <%= @van.owner.last_name %></p>
