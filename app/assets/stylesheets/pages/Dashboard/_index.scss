@@ -1,11 +1,113 @@
-.past-locations {
-  width: 500px;
+body {
+  background-color: $main-color;
 }
 
-.future-locations {
-  width: 800px;
+
+.container-owner {
+  width: 1080px;
+  margin: 20px auto;
+
 }
+
+.container-cards {
+  width: 50%;
+  margin: 0px;
+}
+
+
+.card-owner {
+  overflow: hidden;
+  background-color: $main-color;
+  border-radius: 4px;
+  width: 80%;
+  margin-bottom: 20px;
+
+}
+
+.card-owner > img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-owner-renting{
+
+}
+
+.card-owner h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-owner p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+
+.card-owner .card-owner-infos {
+  padding: 16px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.card-owner-infos .card-owner-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+
+.button-dashboard-owner {
+  position: relative;
+  margin-top: 15px;
+  padding: 12px;
+
+}
+
+.cards-infos-full {
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.calendrier-dash {
+  width: 50%;
+
+  img {
+    height: 200px;
+    width: 200px;
+    margin: 28px auto;
+
+  }
+}
+
+.past-renting {
+  width: 30%;
+}
+
+#card-renting{
+  width: 100%;
+  padding: 5px;
+}
+
+#img-renting {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
 
 .actions-menu {
   width: 500px;
 }
+
+

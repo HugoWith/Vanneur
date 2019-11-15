@@ -4,12 +4,11 @@ class VansController < ApplicationController
 
   def index
     @vans = Van.all
-    p params
     filter_by_town
     filter_by_availability
     filter_by_hippyness
 
-    @vans_geo = Van.geocoded
+    @vans_geo = @vans.geocoded
     @markers = @vans_geo.map do |van|
       {
         lat: van.latitude,
